@@ -2,7 +2,7 @@ package pl.kukla.krzys.spring09rest.web.mapper;
 
 import org.mapstruct.Mapper;
 import pl.kukla.krzys.spring09rest.domain.Customer;
-import pl.kukla.krzys.spring09rest.web.model.CustomerDto;
+import pl.kukla.krzys.spring09rest.domain.CustomerDto;
 
 /**
  * @author Krzysztof Kukla

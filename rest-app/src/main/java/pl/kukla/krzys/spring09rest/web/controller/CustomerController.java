@@ -19,9 +19,9 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponents;
 import org.springframework.web.util.UriComponentsBuilder;
 import pl.kukla.krzys.spring09rest.domain.Customer;
+import pl.kukla.krzys.spring09rest.domain.CustomerDto;
+import pl.kukla.krzys.spring09rest.domain.CustomerListDto;
 import pl.kukla.krzys.spring09rest.service.CustomerService;
-import pl.kukla.krzys.spring09rest.web.model.CustomerDto;
-import pl.kukla.krzys.spring09rest.web.model.CustomerListDto;
 
 import javax.validation.Valid;
 import java.util.List;
@@ -44,7 +44,9 @@ public class CustomerController {
     @ResponseStatus(HttpStatus.OK)
     public CustomerListDto getAll() {
         List<CustomerDto> customers = customerService.findAll();
-        return CustomerListDto.builder().customers(customers).build();
+        CustomerListDto customerListDto = new CustomerListDto();
+        customerListDto.getCustomers().addAll(customers);
+        return customerListDto;
     }
 
     //Content-Type - on request that is going in

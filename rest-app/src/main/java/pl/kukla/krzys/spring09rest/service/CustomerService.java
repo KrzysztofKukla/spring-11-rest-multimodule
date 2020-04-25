@@ -1,6 +1,6 @@
 package pl.kukla.krzys.spring09rest.service;
 
-import pl.kukla.krzys.spring09rest.web.model.CustomerDto;
+import pl.kukla.krzys.spring09rest.domain.CustomerDto;
 
 import java.util.List;
 

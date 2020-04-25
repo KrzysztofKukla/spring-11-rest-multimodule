@@ -7,7 +7,7 @@ import pl.kukla.krzys.spring09rest.domain.Customer;
 import pl.kukla.krzys.spring09rest.exception.CustomerNotFoundException;
 import pl.kukla.krzys.spring09rest.repository.CustomerRepository;
 import pl.kukla.krzys.spring09rest.web.mapper.CustomerMapper;
-import pl.kukla.krzys.spring09rest.web.model.CustomerDto;
+import pl.kukla.krzys.spring09rest.domain.CustomerDto;
 
 import java.util.List;
 import java.util.stream.Collectors;
